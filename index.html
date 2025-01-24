@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Delicious Cakes</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cakes">Our Cakes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Delicious Cakes</h1>
+            <p>Indulge in our heavenly homemade cakes!</p>
+        </section>
+
+        <section id="cakes">
+            <h2>Our Cakes</h2>
+            <div class="cake-grid">
+                <div class="cake-item">
+                    <img src="src/cake1.jpg" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist chocolate cake</p>
+                </div>
+                <div class="cake-item">
+                    <img src="src/cake2.jpg" alt="Vanilla Cake">
+                    <h3>Vanilla Cake</h3>
+                    <p>Classic vanilla cake with buttercream frosting</p>
+                </div>
+                <div class="cake-item">
+                    <img src="src/cake3.jpg" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Smooth and velvety red cake with cream cheese frosting</p>
+                </div>
+                <div class="cake-item">
+                    <img src="src/cake4.jpg" alt="Carrot Cake">
+                    <h3>Carrot Cake</h3>
+                    <p>Moist carrot cake with nuts and cream cheese frosting</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Delicious Cakes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
