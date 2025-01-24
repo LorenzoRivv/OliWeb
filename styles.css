@@ -12,6 +12,7 @@
   header {
     background-color: #f4f4f4;
     padding: 1rem;
+    position: relative;
   }
   
   nav {
@@ -52,7 +53,6 @@
     margin: 5px;
     transition: all 0.3s ease;
   }
-  
   
   section {
     margin-bottom: 2rem;
@@ -229,28 +229,39 @@
   
   @media screen and (max-width: 768px) {
     .nav-links {
-      display: none;
+      position: fixed;
+      right: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #f4f4f4;
+      width: 50%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+  
+    .nav-links.active {
+      right: 0;
+    }
+  
+    .nav-links li {
+      margin: 2.5rem 0;
     }
   
     .burger {
       display: block;
     }
   
-    .nav-active {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      right: 0;
-      top: 70px;
-      background-color: #f4f4f4;
-      width: 50%;
-      text-align: center;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
+    .burger.active .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
     }
   
-    .nav-active li {
-      margin: 1rem 0;
+    .burger.active .line2 {
+      opacity: 0;
+    }
+  
+    .burger.active .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   
     .baker-content {
