@@ -315,4 +315,79 @@
     }
   }
   
-  
+  /* Existing styles remain unchanged */
+
+#buy {
+  padding: 2rem;
+}
+
+.cake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cake-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cake-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cake-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.cake-item button {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cake-item button:hover {
+  background-color: #ff1493;
+}
+
+#cart {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#checkout-btn {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #ff1493;
+}
