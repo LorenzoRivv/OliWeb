@@ -7,10 +7,10 @@ CORS(app)
 
 # Sample product data
 cakes = [
-    {"id": 1, "name": "Chocolate Cake", "price": 28.99, "image": "src/cake1"},
-    {"id": 2, "name": "Vanilla Cake", "price": 22.99, "image": "/placeholder.svg?height=200&width=200"},
-    {"id": 3, "name": "Red Velvet Cake", "price": 27.99, "image": "/placeholder.svg?height=200&width=200"},
-    {"id": 4, "name": "Carrot Cake", "price": 23.99, "image": "/placeholder.svg?height=200&width=200"}
+    {"id": 1, "name": "Chocolate Cake", "price": 28.99, "image": "src/cake1.jpg"},
+    {"id": 2, "name": "Vanilla Cake", "price": 22.99, "image": "src/cake2.jpg"},
+    {"id": 3, "name": "Red Velvet Cake", "price": 27.99, "image": "src/cake3.jpg"},
+    {"id": 4, "name": "Carrot Cake", "price": 23.99, "image": "src/cake4.jpg"}
 ]
 
 @app.route('/api/cakes', methods=['GET'])
